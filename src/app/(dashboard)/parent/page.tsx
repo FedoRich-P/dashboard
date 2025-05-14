@@ -1,5 +1,19 @@
-export default function StudentPage() {
-    return (
-        <div>Page</div>
-    );
+import BigCalendar from '@/components/BigCalendar/BigCalendar';
+import Announcements from '@/components/Announcements/Announcements';
+
+export default function ParentPage() {
+  return (
+    <main className="p-4 flex-1 flex gap-4 flex-col xl:flex-row">
+      <section className="w-full xl:w-2/3">
+        <h1 className={'sr-only'}>Parent Page</h1>
+        <div className="h-full bg-white p-4 rounded-md">
+          <h2 className="text-xl font-semibold">Schedule (John Doe)</h2>
+          <BigCalendar/>
+        </div>
+      </section>
+      <aside className="w-full xl:w-1/3 flex flex-col gap-8">
+        <Announcements />
+      </aside>
+    </main>
+  );
 }

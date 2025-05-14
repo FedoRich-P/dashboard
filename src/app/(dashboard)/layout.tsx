@@ -19,7 +19,7 @@ export default function DashboardLayout({ children }: Props) {
 
             </Menu>
         </aside>
-        <div className={'w-[85%] md:w-[92%] lg:w-[84%] xl:w-[85%] bg-[#f7f8fa] overflow-y-auto'}>
+        <div className={'w-[85%] md:w-[92%] lg:w-[84%] xl:w-[85%] bg-[#f7f8fa] overflow-y-auto flex flex-col gap-3'}>
           <Navbar/>
           {children}
         </div>
