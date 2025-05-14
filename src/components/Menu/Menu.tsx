@@ -1,6 +1,5 @@
-import { menuItems } from '@/components/Menu/menuItems';
+import { menuItems, role } from '@/components/Menu/menuItems';
 import Link from 'next/link';
-import { role } from '@/lib/data';
 
 export default function Menu() {
   return (
