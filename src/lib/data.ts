@@ -1,6 +1,8 @@
 // TEMPORARY DATA
 
-export let role = "admin";
+
+
+import { ResultsType } from '@/components/Table/tableTypes';
 
 export const teachersData = [
   {
@@ -8,8 +10,7 @@ export const teachersData = [
     teacherId: "1234567890",
     name: "John Doe",
     email: "john@doe.com",
-    photo:
-      "https://images.pexels.com/photos/2888150/pexels-photo-2888150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    photo: "https://randomuser.me/api/portraits/men/1.jpg",
     phone: "1234567890",
     subjects: ["Math", "Geometry"],
     classes: ["1B", "2A", "3C"],
@@ -17,237 +18,216 @@ export const teachersData = [
   },
   {
     id: 2,
-    teacherId: "1234567890",
+    teacherId: "1234567891",
     name: "Jane Doe",
     email: "jane@doe.com",
-    photo:
-      "https://images.pexels.com/photos/936126/pexels-photo-936126.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
+    photo: "https://randomuser.me/api/portraits/women/1.jpg",
+    phone: "1234567891",
     subjects: ["Physics", "Chemistry"],
     classes: ["5A", "4B", "3C"],
     address: "123 Main St, Anytown, USA",
   },
   {
     id: 3,
-    teacherId: "1234567890",
+    teacherId: "1234567892",
     name: "Mike Geller",
     email: "mike@geller.com",
-    photo:
-      "https://images.pexels.com/photos/428328/pexels-photo-428328.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
+    photo: "https://randomuser.me/api/portraits/men/2.jpg",
+    phone: "1234567892",
     subjects: ["Biology"],
     classes: ["5A", "4B", "3C"],
     address: "123 Main St, Anytown, USA",
   },
   {
     id: 4,
-    teacherId: "1234567890",
+    teacherId: "1234567893",
     name: "Jay French",
     email: "jay@gmail.com",
-    photo:
-      "https://images.pexels.com/photos/1187765/pexels-photo-1187765.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
+    photo: "https://randomuser.me/api/portraits/men/3.jpg",
+    phone: "1234567893",
     subjects: ["History"],
     classes: ["5A", "4B", "3C"],
     address: "123 Main St, Anytown, USA",
   },
   {
     id: 5,
-    teacherId: "1234567890",
+    teacherId: "1234567894",
     name: "Jane Smith",
     email: "jane@gmail.com",
-    photo:
-      "https://images.pexels.com/photos/1102341/pexels-photo-1102341.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
+    photo: "https://randomuser.me/api/portraits/women/2.jpg",
+    phone: "1234567894",
     subjects: ["Music", "History"],
     classes: ["5A", "4B", "3C"],
     address: "123 Main St, Anytown, USA",
   },
   {
     id: 6,
-    teacherId: "1234567890",
+    teacherId: "1234567895",
     name: "Anna Santiago",
     email: "anna@gmail.com",
-    photo:
-      "https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
+    photo: "https://randomuser.me/api/portraits/women/3.jpg",
+    phone: "1234567895",
     subjects: ["Physics"],
     classes: ["5A", "4B", "3C"],
     address: "123 Main St, Anytown, USA",
   },
   {
     id: 7,
-    teacherId: "1234567890",
+    teacherId: "1234567896",
     name: "Allen Black",
     email: "allen@black.com",
-    photo:
-      "https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
+    photo: "https://randomuser.me/api/portraits/men/4.jpg",
+    phone: "1234567896",
     subjects: ["English", "Spanish"],
     classes: ["5A", "4B", "3C"],
     address: "123 Main St, Anytown, USA",
   },
   {
     id: 8,
-    teacherId: "1234567890",
+    teacherId: "1234567897",
     name: "Ophelia Castro",
     email: "ophelia@castro.com",
-    photo:
-      "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
+    photo: "https://randomuser.me/api/portraits/women/4.jpg",
+    phone: "1234567897",
     subjects: ["Math", "Geometry"],
     classes: ["5A", "4B", "3C"],
     address: "123 Main St, Anytown, USA",
   },
   {
     id: 9,
-    teacherId: "1234567890",
+    teacherId: "1234567898",
     name: "Derek Briggs",
     email: "derek@briggs.com",
-    photo:
-      "https://images.pexels.com/photos/842980/pexels-photo-842980.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
+    photo: "https://randomuser.me/api/portraits/men/5.jpg",
+    phone: "1234567898",
     subjects: ["Literature", "English"],
     classes: ["5A", "4B", "3C"],
     address: "123 Main St, Anytown, USA",
   },
   {
     id: 10,
-    teacherId: "1234567890",
+    teacherId: "1234567899",
     name: "John Glover",
     email: "john@glover.com",
-    photo:
-      "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
+    photo: "https://randomuser.me/api/portraits/men/6.jpg",
+    phone: "1234567899",
     subjects: ["Biology"],
     classes: ["5A", "4B", "3C"],
     address: "123 Main St, Anytown, USA",
   },
 ];
-
 export const studentsData = [
   {
     id: 1,
-    studentId: "1234567890",
+    studentId: "2234567890",
     name: "John Doe",
     email: "john@doe.com",
-    photo:
-      "https://images.pexels.com/photos/2888150/pexels-photo-2888150.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
+    photo: "https://randomuser.me/api/portraits/men/7.jpg",
+    phone: "2234567890",
     grade: 5,
     class: "1B",
     address: "123 Main St, Anytown, USA",
   },
   {
     id: 2,
-    studentId: "1234567890",
+    studentId: "2234567891",
     name: "Jane Doe",
     email: "jane@doe.com",
-    photo:
-      "https://images.pexels.com/photos/936126/pexels-photo-936126.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
+    photo: "https://randomuser.me/api/portraits/women/7.jpg",
+    phone: "2234567891",
     grade: 5,
     class: "5A",
     address: "123 Main St, Anytown, USA",
   },
   {
     id: 3,
-    studentId: "1234567890",
+    studentId: "2234567892",
     name: "Mike Geller",
     email: "mike@geller.com",
-    photo:
-      "https://images.pexels.com/photos/428328/pexels-photo-428328.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
+    photo: "https://randomuser.me/api/portraits/men/8.jpg",
+    phone: "2234567892",
     grade: 5,
     class: "5A",
     address: "123 Main St, Anytown, USA",
   },
   {
     id: 4,
-    studentId: "1234567890",
+    studentId: "2234567893",
     name: "Jay French",
     email: "jay@gmail.com",
-    photo:
-      "https://images.pexels.com/photos/1187765/pexels-photo-1187765.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
+    photo: "https://randomuser.me/api/portraits/men/9.jpg",
+    phone: "2234567893",
     grade: 5,
     class: "5A",
     address: "123 Main St, Anytown, USA",
   },
   {
     id: 5,
-    studentId: "1234567890",
+    studentId: "2234567894",
     name: "Jane Smith",
     email: "jane@gmail.com",
-    photo:
-      "https://images.pexels.com/photos/1102341/pexels-photo-1102341.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
+    photo: "https://randomuser.me/api/portraits/women/8.jpg",
+    phone: "2234567894",
     grade: 5,
     class: "5A",
     address: "123 Main St, Anytown, USA",
   },
   {
     id: 6,
-    studentId: "1234567890",
+    studentId: "2234567895",
     name: "Anna Santiago",
     email: "anna@gmail.com",
-    photo:
-      "https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
+    photo: "https://randomuser.me/api/portraits/women/9.jpg",
+    phone: "2234567895",
     grade: 5,
     class: "5A",
     address: "123 Main St, Anytown, USA",
   },
   {
     id: 7,
-    studentId: "1234567890",
+    studentId: "2234567896",
     name: "Allen Black",
     email: "allen@black.com",
-    photo:
-      "https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
+    photo: "https://randomuser.me/api/portraits/men/10.jpg",
+    phone: "2234567896",
     grade: 5,
     class: "5A",
     address: "123 Main St, Anytown, USA",
   },
   {
     id: 8,
-    studentId: "1234567890",
+    studentId: "2234567897",
     name: "Ophelia Castro",
     email: "ophelia@castro.com",
-    photo:
-      "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
+    photo: "https://randomuser.me/api/portraits/women/10.jpg",
+    phone: "2234567897",
     grade: 5,
     class: "5A",
     address: "123 Main St, Anytown, USA",
   },
   {
     id: 9,
-    studentId: "1234567890",
+    studentId: "2234567898",
     name: "Derek Briggs",
     email: "derek@briggs.com",
-    photo:
-      "https://images.pexels.com/photos/842980/pexels-photo-842980.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
+    photo: "https://randomuser.me/api/portraits/men/11.jpg",
+    phone: "2234567898",
     grade: 5,
     class: "5A",
     address: "123 Main St, Anytown, USA",
   },
   {
     id: 10,
-    studentId: "1234567890",
+    studentId: "2234567899",
     name: "John Glover",
     email: "john@glover.com",
-    photo:
-      "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
+    photo: "https://randomuser.me/api/portraits/men/12.jpg",
+    phone: "2234567899",
     grade: 5,
     class: "5A",
     address: "123 Main St, Anytown, USA",
   },
 ];
-
 export const parentsData = [
   {
     id: 1,
@@ -330,7 +310,6 @@ export const parentsData = [
     address: "123 Main St, Anytown, USA",
   },
 ];
-
 export const subjectsData = [
   {
     id: 1,
@@ -383,7 +362,6 @@ export const subjectsData = [
     teachers: ["Effie Lynch", "Brett Flowers"],
   },
 ];
-
 export const classesData = [
   {
     id: 1,
@@ -421,7 +399,7 @@ export const classesData = [
     supervisor: "Iva Frank",
   },
   {
-    id: 5,
+    id: 6,
     name: "5B",
     capacity: 20,
     grade: 5,
@@ -456,7 +434,6 @@ export const classesData = [
     supervisor: "Ophelia Marsh",
   },
 ];
-
 export const lessonsData = [
   {
     id: 1,
@@ -519,7 +496,6 @@ export const lessonsData = [
     teacher: "Julia Pittman",
   },
 ];
-
 export const examsData = [
   {
     id: 1,
@@ -592,7 +568,6 @@ export const examsData = [
     date: "2025-01-01",
   },
 ];
-
 export const assignmentsData = [
   {
     id: 1,
@@ -665,8 +640,7 @@ export const assignmentsData = [
     dueDate: "2025-01-01",
   },
 ];
-
-export const resultsData = [
+export const resultsData: ResultsType[] = [
   {
     id: 1,
     subject: "Math",
@@ -768,7 +742,6 @@ export const resultsData = [
     score: 90,
   },
 ];
-
 export const eventsData = [
   {
     id: 1,
@@ -851,7 +824,6 @@ export const eventsData = [
     endTime: "11:00",
   },
 ];
-
 export const announcementsData = [
   {
     id: 1,
@@ -921,143 +893,139 @@ export const calendarEvents = [
   {
     title: "Math",
     allDay: false,
-    start: new Date(2024, 7, 12, 8, 0),
-    end: new Date(2024, 7, 12, 8, 45),
+    start: new Date(2025, 4, 12, 8, 0), // 12 мая 2025
+    end: new Date(2025, 4, 12, 8, 45),
   },
   {
     title: "English",
     allDay: false,
-    start: new Date(2024, 7, 12, 9, 0),
-    end: new Date(2024, 7, 12, 9, 45),
+    start: new Date(2025, 4, 12, 9, 0), // 12 мая 2025
+    end: new Date(2025, 4, 12, 9, 45),
   },
   {
     title: "Biology",
     allDay: false,
-    start: new Date(2024, 7, 12, 10, 0),
-    end: new Date(2024, 7, 12, 10, 45),
+    start: new Date(2025, 4, 12, 10, 0),
+    end: new Date(2025, 4, 12, 10, 45),
   },
   {
     title: "Physics",
     allDay: false,
-    start: new Date(2024, 7, 12, 11, 0),
-    end: new Date(2024, 7, 12, 11, 45),
+    start: new Date(2025, 4, 12, 11, 0),
+    end: new Date(2025, 4, 12, 11, 45),
   },
   {
     title: "Chemistry",
     allDay: false,
-    start: new Date(2024, 7, 12, 13, 0),
-    end: new Date(2024, 7, 12, 13, 45),
+    start: new Date(2025, 4, 12, 13, 0),
+    end: new Date(2025, 4, 12, 13, 45),
   },
   {
     title: "History",
     allDay: false,
-    start: new Date(2024, 7, 12, 14, 0),
-    end: new Date(2024, 7, 12, 14, 45),
+    start: new Date(2025, 4, 12, 14, 0),
+    end: new Date(2025, 4, 12, 14, 45),
   },
   {
     title: "English",
     allDay: false,
-    start: new Date(2024, 7, 13, 9, 0),
-    end: new Date(2024, 7, 13, 9, 45),
+    start: new Date(2025, 4, 13, 9, 0), // 13 мая 2025
+    end: new Date(2025, 4, 13, 9, 45),
   },
   {
     title: "Biology",
     allDay: false,
-    start: new Date(2024, 7, 13, 10, 0),
-    end: new Date(2024, 7, 13, 10, 45),
+    start: new Date(2025, 4, 13, 10, 0),
+    end: new Date(2025, 4, 13, 10, 45),
   },
   {
     title: "Physics",
     allDay: false,
-    start: new Date(2024, 7, 13, 11, 0),
-    end: new Date(2024, 7, 13, 11, 45),
+    start: new Date(2025, 4, 13, 11, 0),
+    end: new Date(2025, 4, 13, 11, 45),
   },
-
   {
     title: "History",
     allDay: false,
-    start: new Date(2024, 7, 13, 14, 0),
-    end: new Date(2024, 7, 13, 14, 45),
+    start: new Date(2025, 4, 13, 14, 0),
+    end: new Date(2025, 4, 13, 14, 45),
   },
   {
     title: "Math",
     allDay: false,
-    start: new Date(2024, 7, 14, 8, 0),
-    end: new Date(2024, 7, 14, 8, 45),
+    start: new Date(2025, 4, 14, 8, 0), // 14 мая 2025
+    end: new Date(2025, 4, 14, 8, 45),
   },
   {
     title: "Biology",
     allDay: false,
-    start: new Date(2024, 7, 14, 10, 0),
-    end: new Date(2024, 7, 14, 10, 45),
+    start: new Date(2025, 4, 14, 10, 0),
+    end: new Date(2025, 4, 14, 10, 45),
   },
-
   {
     title: "Chemistry",
     allDay: false,
-    start: new Date(2024, 7, 14, 13, 0),
-    end: new Date(2024, 7, 14, 13, 45),
+    start: new Date(2025, 4, 14, 13, 0),
+    end: new Date(2025, 4, 14, 13, 45),
   },
   {
     title: "History",
     allDay: false,
-    start: new Date(2024, 7, 14, 14, 0),
-    end: new Date(2024, 7, 13, 14, 45),
+    start: new Date(2025, 4, 14, 14, 0), // Исправлено: end теперь 14 мая
+    end: new Date(2025, 4, 14, 14, 45),
   },
   {
     title: "English",
     allDay: false,
-    start: new Date(2024, 7, 15, 9, 0),
-    end: new Date(2024, 7, 15, 9, 45),
+    start: new Date(2025, 4, 15, 9, 0), // 15 мая 2025
+    end: new Date(2025, 4, 15, 9, 45),
   },
   {
     title: "Biology",
     allDay: false,
-    start: new Date(2024, 7, 15, 10, 0),
-    end: new Date(2024, 7, 15, 10, 45),
+    start: new Date(2025, 4, 15, 10, 0),
+    end: new Date(2025, 4, 15, 10, 45),
   },
   {
     title: "Physics",
     allDay: false,
-    start: new Date(2024, 7, 15, 11, 0),
-    end: new Date(2024, 7, 15, 11, 45),
+    start: new Date(2025, 4, 15, 11, 0),
+    end: new Date(2025, 4, 15, 11, 45),
   },
-
   {
     title: "History",
     allDay: false,
-    start: new Date(2024, 7, 15, 14, 0),
-    end: new Date(2024, 7, 15, 14, 45),
+    start: new Date(2025, 4, 15, 14, 0),
+    end: new Date(2025, 4, 15, 14, 45),
   },
   {
     title: "Math",
     allDay: false,
-    start: new Date(2024, 7, 16, 8, 0),
-    end: new Date(2024, 7, 16, 8, 45),
+    start: new Date(2025, 4, 16, 8, 0), // 16 мая 2025
+    end: new Date(2025, 4, 16, 8, 45),
   },
   {
     title: "English",
     allDay: false,
-    start: new Date(2024, 7, 16, 9, 0),
-    end: new Date(2024, 7, 16, 9, 45),
+    start: new Date(2025, 4, 16, 9, 0),
+    end: new Date(2025, 4, 16, 9, 45),
   },
-
   {
     title: "Physics",
     allDay: false,
-    start: new Date(2024, 7, 16, 11, 0),
-    end: new Date(2024, 7, 16, 11, 45),
+    start: new Date(2025, 4, 16, 11, 0),
+    end: new Date(2025, 4, 16, 11, 45),
   },
   {
     title: "Chemistry",
     allDay: false,
-    start: new Date(2024, 7, 16, 13, 0),
-    end: new Date(2024, 7, 16, 13, 45),
+    start: new Date(2025, 4, 16, 13, 0),
+    end: new Date(2025, 4, 16, 13, 45),
   },
   {
     title: "History",
     allDay: false,
-    start: new Date(2024, 7, 16, 14, 0),
-    end: new Date(2024, 7, 16, 14, 45),
+    start: new Date(2025, 4, 16, 14, 0),
+    end: new Date(2025, 4, 16, 14, 45),
   },
 ];

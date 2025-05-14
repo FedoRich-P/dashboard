@@ -18,6 +18,8 @@ import {
   LogOut,
 } from 'lucide-react';
 
+export let role = "admin";
+
 export const menuItems = [
   {
     title: 'MENU',
