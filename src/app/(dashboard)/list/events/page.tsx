@@ -4,6 +4,7 @@ import Table from '@/components/Table/Table';
 import { eventColumns } from '@/components/Table/tableTypes';
 import { TableHeader } from '@/components/Table/TableHeader';
 import { RowEvent } from '@/components/Table/tableRows/RowEvent';
+import { role } from '@/components/Menu/menuItems';
 
 export default function EventListPage() {
   return (
@@ -11,7 +12,7 @@ export default function EventListPage() {
       <TableHeader title={'All Events'} />
       <Table columns={eventColumns}>
         {eventsData.map((item) => (
-          <RowEvent key={item.id} item={item} role={'admin'} />
+          <RowEvent key={item.id} item={item} role={role} />
         ))}
       </Table>
       <Pagination />

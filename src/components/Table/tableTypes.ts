@@ -1,3 +1,22 @@
+import { ModalTable } from '@/components/FormModal';
+
+export type TableDataTypes = {
+  teacher: RowTeachersType & BaseRow;
+  student: RowStudentsType & BaseRow;
+  parent: RowParentType & BaseRow;
+  subject: RowSubjectType;
+  class: ClassType;
+  lesson: LessonType;
+  exam: ExamType;
+  assignment: AssignmentsType;
+  result: ResultsType;
+  attendance: AttendanceType;
+  event: EventType;
+  announcement: AnnouncementType;
+};
+
+export type TableRowType<T extends ModalTable> = TableDataTypes[T];
+
 export type BaseRow = {
   id: number;
   name: string;
@@ -81,6 +100,13 @@ export type TableColumnItem = {
   header: string;
   accessor: string;
   className?: string;
+};
+
+export type AttendanceType = {
+  id: number;
+  student: string;
+  date: string;
+  status: 'present' | 'absent' | 'late';
 };
 
 export const studentColumns = [

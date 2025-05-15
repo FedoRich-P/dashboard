@@ -9,7 +9,7 @@ type Props = {
 export function RowParents({ item, subItem }: Props) {
   const { students } = subItem;
   return (
-    <TableRowLayout item={item}>
+    <TableRowLayout item={item} section={'parent'}>
       <td className="hidden md:table-cell">{students.join(',')}</td>
     </TableRowLayout>
   );

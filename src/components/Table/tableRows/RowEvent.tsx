@@ -1,7 +1,8 @@
-import { EventType } from '@/components/Table/tableTypes';
+import { TableRowType } from '@/components/Table/tableTypes';
+import { RowActions } from '@/components/Table/tableRows/RowActions';
 
 type Props = {
-  item: EventType;
+  item: TableRowType<'event'>;
   role?: string;
 };
 
@@ -13,17 +14,7 @@ export function RowEvent({ item, role }: Props) {
       <td className="hidden md:table-cell">{item.date}</td>
       <td className="hidden md:table-cell">{item.startTime}</td>
       <td className="hidden md:table-cell">{item.endTime}</td>
-      <td>
-        <div className="flex items-center gap-2">
-          {role === 'admin' && (
-            <>
-              admin
-              {/*<FormModal table="event" type="update" data={item} />*/}
-              {/*<FormModal table="event" type="delete" id={item.id} />*/}
-            </>
-          )}
-        </div>
-      </td>
+      <RowActions item={item} section={'event'} role={role} />
     </tr>
   );
 }

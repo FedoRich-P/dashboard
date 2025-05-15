@@ -1,7 +1,8 @@
-import { RowSubjectType } from '@/components/Table/tableTypes';
+import { TableRowType } from '@/components/Table/tableTypes';
+import { RowActions } from '@/components/Table/tableRows/RowActions';
 
 type Props = {
-  item: RowSubjectType;
+  item: TableRowType<'subject'>;
   role?: string;
 };
 
@@ -10,17 +11,7 @@ export function RowSubjects({ item, role }: Props) {
     <tr key={item.id} className="border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-lamaPurpleLight">
       <td className="flex items-center gap-4 p-4">{item.name}</td>
       <td className="hidden md:table-cell">{item.teachers.join(',')}</td>
-      <td>
-        <div className="flex items-center gap-2">
-          {role === 'admin' && (
-            <>
-              fff
-              {/*<FormModal table="subject" type="update" data={item} />*/}
-              {/*<FormModal table="subject" type="delete" id={item.id} />*/}
-            </>
-          )}
-        </div>
-      </td>
+      <RowActions item={item} section={'subject'} role={role} />
     </tr>
   );
 }

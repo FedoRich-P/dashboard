@@ -4,6 +4,7 @@ import Table from '@/components/Table/Table';
 import { subjectsColumns } from '@/components/Table/tableTypes';
 import { RowSubjects } from '@/components/Table/tableRows/RowSubjects';
 import { TableHeader } from '@/components/Table/TableHeader';
+import { role } from '@/components/Menu/menuItems';
 
 export default function ClassesListPage() {
   return (
@@ -11,7 +12,7 @@ export default function ClassesListPage() {
       <TableHeader title={'All Classes'} />
       <Table columns={subjectsColumns}>
         {subjectsData.map((item) => (
-          <RowSubjects key={item.id} item={item} role={'admin'} />
+          <RowSubjects key={item.id} item={item} role={role} />
         ))}
       </Table>
       <Pagination />

@@ -4,6 +4,7 @@ import Table from '@/components/Table/Table';
 import { lessonsColumns } from '@/components/Table/tableTypes';
 import { TableHeader } from '@/components/Table/TableHeader';
 import { RowLessons } from '@/components/Table/tableRows/RowLessons';
+import { role } from '@/components/Menu/menuItems';
 
 export default function SubjectListPage() {
   return (
@@ -11,7 +12,7 @@ export default function SubjectListPage() {
       <TableHeader title={'All Lessons'} />
       <Table columns={lessonsColumns}>
         {lessonsData.map((item) => (
-          <RowLessons key={item.id} item={item} role={'admin'} />
+          <RowLessons key={item.id} item={item} role={role} />
         ))}
       </Table>
       <Pagination />

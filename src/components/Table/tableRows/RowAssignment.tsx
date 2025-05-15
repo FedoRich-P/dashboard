@@ -1,7 +1,8 @@
-import { AssignmentsType } from '@/components/Table/tableTypes';
+import { TableRowType } from '@/components/Table/tableTypes';
+import { RowActions } from '@/components/Table/tableRows/RowActions';
 
 type Props = {
-  item: AssignmentsType;
+  item: TableRowType<'assignment'>;
   role?: string;
 };
 
@@ -12,17 +13,7 @@ export function RowAssignment({ item, role }: Props) {
       <td>{item.class}</td>
       <td className="hidden md:table-cell">{item.teacher}</td>
       <td className="hidden md:table-cell">{item.dueDate}</td>
-      <td>
-        <div className="flex items-center gap-2">
-          {role === 'admin' ||
-            (role === 'teacher' && (
-              <>
-                {/*<FormModal table="assignment" type="update" data={item} />*/}
-                {/*<FormModal table="assignment" type="delete" id={item.id} />*/}
-              </>
-            ))}
-        </div>
-      </td>
+      <RowActions item={item} section={'assignment'} role={role} />
     </tr>
   );
 }

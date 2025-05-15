@@ -1,7 +1,8 @@
-import { ClassType } from '@/components/Table/tableTypes';
+import { TableRowType } from '@/components/Table/tableTypes';
+import { RowActions } from '@/components/Table/tableRows/RowActions';
 
 type Props = {
-  item: ClassType;
+  item: TableRowType<'class'>;
   role?: string;
 };
 
@@ -12,17 +13,7 @@ export function RowClasses({ item, role }: Props) {
       <td className="hidden md:table-cell">{item.capacity}</td>
       <td className="hidden md:table-cell">{item.grade}</td>
       <td className="hidden md:table-cell">{item.supervisor}</td>
-      <td>
-        <div className="flex items-center gap-2">
-          {role === 'admin' && (
-            <>
-              fff
-              {/*<FormModal table="subject" type="update" data={item} />*/}
-              {/*<FormModal table="subject" type="delete" id={item.id} />*/}
-            </>
-          )}
-        </div>
-      </td>
+      <RowActions item={item} section={'class'} role={role} />
     </tr>
   );
 }

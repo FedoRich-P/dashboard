@@ -1,7 +1,8 @@
-import { ResultsType } from '@/components/Table/tableTypes';
+import { TableRowType } from '@/components/Table/tableTypes';
+import { RowActions } from '@/components/Table/tableRows/RowActions';
 
 type Props = {
-  item: ResultsType;
+  item: TableRowType<'result'>;
   role?: string;
 };
 
@@ -14,15 +15,7 @@ export function RowResults({ item, role }: Props) {
       <td className="hidden md:table-cell">{item.teacher}</td>
       <td className="hidden md:table-cell">{item.class}</td>
       <td className="hidden md:table-cell">{item.date}</td>
-      <td className="flex items-center gap-2">
-        {role === 'admin' ||
-          (role === 'teacher' && (
-            <>
-              {/*<FormModal table="result" type="update" data={item} />*/}
-              {/*<FormModal table="result" type="delete" id={item.id} />*/}
-            </>
-          ))}
-      </td>
+      <RowActions item={item} section={'result'} role={role} />
     </tr>
   );
 }

@@ -5,6 +5,7 @@ import CountChart from '@/components/CountChart';
 import AttendanceChart from '@/components/AttendanceChart';
 import FinanceChart from '@/components/FinanceChart/FinanceChart';
 import { cardData } from '@/constants/adminCardsDB';
+import { announcementsDB } from '@/components/Announcements/announcementsItemDB';
 
 
 export default function AdminPage() {
@@ -24,7 +25,7 @@ export default function AdminPage() {
 
       <aside className="w-full lg:w-1/3 flex flex-col gap-8">
         <EventCalendar />
-        <Announcements />
+        <Announcements announcements={announcementsDB} />
       </aside>
     </main>
   );

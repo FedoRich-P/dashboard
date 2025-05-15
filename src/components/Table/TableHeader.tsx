@@ -1,5 +1,6 @@
 import SearchInputForm from '@/components/SearchInputForm';
-import { FilterIcon, Plus, SortAscIcon } from 'lucide-react';
+import { FilterIcon, SortAscIcon } from 'lucide-react';
+import FormModal from '@/components/FormModal';
 
 type Props = {
   title: string;
@@ -15,24 +16,15 @@ export function TableHeader({ title, role }: Props) {
         <ul className="flex items-center gap-4 self-end">
           <li>
             <button className="btn-sort">
-              <FilterIcon className="w-6 h-6" aria-hidden="true" />
+              <FilterIcon className="w-5 h-5 text-inherit" aria-hidden="true" />
             </button>
           </li>
           <li>
             <button className="btn-sort">
-              <SortAscIcon className="w-6 h-6" aria-hidden="true" />
+              <SortAscIcon className="w-5 h-5 text-inherit" aria-hidden="true" />
             </button>
           </li>
-          {
-            role === 'admin' && (
-              <li>
-                <button className="btn-sort">
-                  <Plus className="w-6 h-6" aria-hidden="true" />
-                </button>
-              </li>
-            )
-            // <FormModal table="teacher" type="create"/>
-          }
+          {role === 'admin' && <FormModal table="teacher" type="create" />}
         </ul>
       </nav>
     </header>

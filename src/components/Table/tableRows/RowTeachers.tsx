@@ -9,7 +9,7 @@ type Props = {
 export function RowTeachers({ item, subItem }: Props) {
   const { classes, subjects, teacherId } = subItem;
   return (
-    <TableRowLayout item={item}>
+    <TableRowLayout item={item} view section={'teacher'}>
       <td className="hidden md:table-cell">{teacherId}</td>
       <td className="hidden md:table-cell">{subjects.join(',')}</td>
       <td className="hidden md:table-cell max-w-[120px] overflow-x-auto whitespace-nowrap">{classes?.join(',')}</td>

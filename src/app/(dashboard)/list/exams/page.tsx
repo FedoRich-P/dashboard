@@ -4,6 +4,7 @@ import Table from '@/components/Table/Table';
 import { examsColumns } from '@/components/Table/tableTypes';
 import { TableHeader } from '@/components/Table/TableHeader';
 import { RowExams } from '@/components/Table/tableRows/RowExams';
+import { role } from '@/components/Menu/menuItems';
 
 export default function ExamsListPage() {
   return (
@@ -11,7 +12,7 @@ export default function ExamsListPage() {
       <TableHeader title={'All Exams'} />
       <Table columns={examsColumns}>
         {examsData.map((item) => (
-          <RowExams key={item.id} item={item} role={'admin'} />
+          <RowExams key={item.id} item={item} role={role} />
         ))}
       </Table>
       <Pagination />
