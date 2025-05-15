@@ -4,59 +4,63 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6b4a481-ace2-4953-b473-14433f40c4ea" name="Changes" comment="P-1">
-      <change afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/announcements/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/assignments/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/classes/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/events/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/exams/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/lessons/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/parents/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/results/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/students/[id]/pages.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/students/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/subjects/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/teacher/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/teachers/[id]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/teachers/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BigCalendar/BigCalendar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BigCalendar/BigCalendar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Pagination.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SearchInputForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Table/Table.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Table/TableHeader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Table/tableRows/RowAnnouncement.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Table/tableRows/RowAssignment.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Table/tableRows/RowClasses.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Table/tableRows/RowEvent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Table/tableRows/RowExams.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Table/tableRows/RowLessons.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Table/tableRows/RowParents.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Table/tableRows/RowResults.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Table/tableRows/RowStudents.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Table/tableRows/RowSubjects.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Table/tableRows/RowTeachers.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Table/tableRows/TableRowLayout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Table/tableTypes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TableSearch.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/lib/format/formatPhoneRu.ts" afterDir="false" />
+    <list default="true" id="e6b4a481-ace2-4953-b473-14433f40c4ea" name="Changes" comment="P-2 Base final">
+      <change afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/attendance/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/messages/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/students/[id]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/InputField.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainPage/HeaderCarts.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainPage/MainCartInfo.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainPage/MainPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainPage/MainPageSidebar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Performance.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Table/tableRows/RowActions.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/forms/FormComponent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/forms/ModalsForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/forms/ParentsForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/forms/StudentForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/forms/TeacherForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/forms/modalsFormSchema.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/hooks/useClickOutside.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(dashboard)/admin/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(dashboard)/admin/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(dashboard)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(dashboard)/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(dashboard)/list/announcements/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/announcements/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(dashboard)/list/assignments/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/assignments/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(dashboard)/list/classes/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/classes/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(dashboard)/list/events/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/events/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(dashboard)/list/exams/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/exams/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(dashboard)/list/lessons/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/lessons/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(dashboard)/list/results/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/results/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(dashboard)/list/students/[id]/pages.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormModal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(dashboard)/list/students/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/students/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(dashboard)/list/subjects/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/subjects/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(dashboard)/list/teacher/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/teacher/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(dashboard)/list/teachers/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/teachers/[id]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(dashboard)/list/teachers/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(dashboard)/list/teachers/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(dashboard)/parent/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(dashboard)/parent/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(dashboard)/sudent/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(dashboard)/student/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(dashboard)/student/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(dashboard)/student/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(dashboard)/teacher/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(dashboard)/teacher/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Announcements/Announcements.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Announcements/Announcements.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Announcements/AnnouncementsItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Announcements/AnnouncementsItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FinanceChart/FinanceChart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FinanceChart/FinanceChart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/Menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EventCalendar/EventCalendar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EventCalendar/EventCalendar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Menu/menuItems.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/menuItems.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchInputForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchInputForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Table/TableHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/TableHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Table/tableRows/RowAnnouncement.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/tableRows/RowAnnouncement.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Table/tableRows/RowAssignment.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/tableRows/RowAssignment.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Table/tableRows/RowClasses.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/tableRows/RowClasses.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Table/tableRows/RowEvent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/tableRows/RowEvent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Table/tableRows/RowExams.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/tableRows/RowExams.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Table/tableRows/RowLessons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/tableRows/RowLessons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Table/tableRows/RowParents.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/tableRows/RowParents.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Table/tableRows/RowResults.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/tableRows/RowResults.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Table/tableRows/RowStudents.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/tableRows/RowStudents.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Table/tableRows/RowSubjects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/tableRows/RowSubjects.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Table/tableRows/RowTeachers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/tableRows/RowTeachers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Table/tableRows/TableRowLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/tableRows/TableRowLayout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Table/tableTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/tableTypes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,10 +88,11 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "P-1",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "P-2",
     "js.debugger.nextJs.config.created.client": "true",
     "js.debugger.nextJs.config.created.server": "true",
-    "last_opened_file_path": "D:/reactify/youtube/dashboard-lama/src/app/(dashboard)/list",
+    "last_opened_file_path": "D:/reactify/youtube/dashboard-lama/src/components/forms",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -102,18 +107,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\reactify\youtube\dashboard-lama\src\components\forms" />
       <recent name="D:\reactify\youtube\dashboard-lama\src\app\(dashboard)\list" />
-      <recent name="D:\reactify\youtube\dashboard-lama\src\components\Table\tableRows" />
-      <recent name="D:\reactify\youtube\dashboard-lama\src\components\Table" />
-      <recent name="D:\reactify\youtube\dashboard-lama\src\shared\lib\format" />
+      <recent name="D:\reactify\youtube\dashboard-lama\src\components\TeachersMainPage" />
       <recent name="D:\reactify\youtube\dashboard-lama" />
+      <recent name="D:\reactify\youtube\dashboard-lama\src\dashboard" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\reactify\youtube\dashboard-lama\src\components\Table\tableRows" />
-      <recent name="D:\reactify\youtube\dashboard-lama\src\app\(dashboard)\list" />
-      <recent name="D:\reactify\youtube\dashboard-lama\src\components\BigCalendar" />
+      <recent name="D:\reactify\youtube\dashboard-lama\src\components\TeachersMainPage" />
       <recent name="D:\reactify\youtube\dashboard-lama\src\components\EventCalendar" />
       <recent name="D:\reactify\youtube\dashboard-lama\src\components\FinanceChart" />
+      <recent name="D:\reactify\youtube\dashboard-lama\src\components\Announcements" />
+      <recent name="D:\reactify\youtube\dashboard-lama\src\components\Menu" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Next.js: server-side">
@@ -148,7 +153,7 @@
       <workItem from="1747123705485" duration="4301000" />
       <workItem from="1747133330310" duration="3495000" />
       <workItem from="1747138478053" duration="23744000" />
-      <workItem from="1747202637952" duration="33664000" />
+      <workItem from="1747286653738" duration="31285000" />
     </task>
     <servers />
   </component>
@@ -156,17 +161,16 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="P-1" />
-    <option name="LAST_COMMIT_MESSAGE" value="P-1" />
+    <MESSAGE value="P-2 Base final" />
+    <option name="LAST_COMMIT_MESSAGE" value="P-2 Base final" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/lib/data.ts</url>
-          <line>118</line>
+          <url>file://$PROJECT_DIR$/src/app/(dashboard)/list/students/page.tsx</url>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

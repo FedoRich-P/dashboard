@@ -18,7 +18,7 @@ import {
   LogOut,
 } from 'lucide-react';
 
-export let role = "admin";
+export let role = "teacher";
 
 export const menuItems = [
   {

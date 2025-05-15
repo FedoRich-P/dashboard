@@ -19,7 +19,7 @@
     }
 
     .btn-sort {
-        @apply p-2 flex items-center justify-center rounded-full bg-primary cursor-pointer transition-all duration-500 border border-primary
+        @apply p-2 flex items-center justify-center rounded-md bg-primary cursor-pointer transition-all duration-500 border border-primary
     }
 
     .btn-sort:hover {
