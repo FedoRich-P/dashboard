@@ -4,6 +4,7 @@ import Table from '@/components/Table/Table';
 import { announcementsColumns } from '@/components/Table/tableTypes';
 import { TableHeader } from '@/components/Table/TableHeader';
 import { RowAnnouncement } from '@/components/Table/tableRows/RowAnnouncement';
+import { role } from '@/components/Menu/menuItems';
 
 export default function AnnouncementListPage() {
   return (
@@ -11,7 +12,7 @@ export default function AnnouncementListPage() {
       <TableHeader title={'All Announcements'} />
       <Table columns={announcementsColumns}>
         {announcementsData.map((item) => (
-          <RowAnnouncement key={item.id} item={item} role={'admin'} />
+          <RowAnnouncement key={item.id} item={item} role={role} />
         ))}
       </Table>
       <Pagination />

@@ -1,9 +1,19 @@
-import { announcementsDB } from '@/components/Announcements/announcementsItemDB';
 import AnnouncementsItem from '@/components/Announcements/AnnouncementsItem';
 import Link from 'next/link';
 import { ArrowRightIcon } from 'lucide-react';
 
-export default function Announcements() {
+type AnnouncementProps = {
+  id: string;
+  title: string;
+  description: string;
+  date: string;
+};
+
+type Props = {
+  announcements: AnnouncementProps[];
+};
+
+export default function Announcements({ announcements }: Props) {
   return (
     <div className="bg-white p-4 rounded-md">
       <div className="flex items-center justify-between">
@@ -14,7 +24,7 @@ export default function Announcements() {
         </Link>
       </div>
       <ul className="flex flex-col gap-4 mt-4">
-        {announcementsDB.map((announcement) => (
+        {announcements.map((announcement) => (
           <AnnouncementsItem key={announcement.id} {...announcement} />
         ))}
       </ul>

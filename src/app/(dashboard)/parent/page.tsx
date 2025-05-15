@@ -1,5 +1,6 @@
 import BigCalendar from '@/components/BigCalendar/BigCalendar';
 import Announcements from '@/components/Announcements/Announcements';
+import { announcementsDB } from '@/components/Announcements/announcementsItemDB';
 
 export default function ParentPage() {
   return (
@@ -12,7 +13,7 @@ export default function ParentPage() {
         </div>
       </section>
       <aside className="w-full xl:w-1/3 flex flex-col gap-8">
-        <Announcements />
+        <Announcements announcements={announcementsDB} />
       </aside>
     </main>
   );

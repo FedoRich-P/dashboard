@@ -1,7 +1,8 @@
-import { AnnouncementType } from '@/components/Table/tableTypes';
+import { TableRowType } from '@/components/Table/tableTypes';
+import { RowActions } from '@/components/Table/tableRows/RowActions';
 
 type Props = {
-  item: AnnouncementType;
+  item: TableRowType<'announcement'>;
   role?: string;
 };
 
@@ -11,16 +12,7 @@ export function RowAnnouncement({ item, role }: Props) {
       <td className="flex items-center gap-4 p-4">{item.title}</td>
       <td>{item.class}</td>
       <td className="hidden md:table-cell">{item.date}</td>
-      <td>
-        <div className="flex items-center gap-2">
-          {role === 'admin' && (
-            <>
-              {/*<FormModal table="announcement" type="update" data={item} />*/}
-              {/*<FormModal table="announcement" type="delete" id={item.id} />*/}
-            </>
-          )}
-        </div>
-      </td>
+      <RowActions item={item} section={'announcement'} role={role} />
     </tr>
   );
 }

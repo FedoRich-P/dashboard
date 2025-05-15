@@ -1,6 +1,7 @@
 import EventCalendar from '@/components/EventCalendar/EventCalendar';
 import Announcements from '@/components/Announcements/Announcements';
 import BigCalendar from '@/components/BigCalendar/BigCalendar';
+import { announcementsDB } from '@/components/Announcements/announcementsItemDB';
 
 export default function StudentPage() {
   return (
@@ -14,7 +15,7 @@ export default function StudentPage() {
       </section>
       <aside className="w-full xl:w-1/3 flex flex-col gap-8">
         <EventCalendar />
-        <Announcements />
+        <Announcements announcements={announcementsDB} />
       </aside>
     </main>
   );

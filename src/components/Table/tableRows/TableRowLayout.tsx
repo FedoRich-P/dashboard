@@ -1,18 +1,21 @@
 import Image from 'next/image';
-import { BrushCleaning, View } from 'lucide-react';
+import { View } from 'lucide-react';
 import Link from 'next/link';
 import { role } from '@/components/Menu/menuItems';
 import { BaseRow } from '@/components/Table/tableTypes';
 import { formatPhoneRu } from '@/shared/lib/format/formatPhoneRu';
 import { ReactNode } from 'react';
+import FormModal, { ModalTable } from '@/components/FormModal';
 
 type Props = {
   item: BaseRow;
   studentClass?: string;
   children: ReactNode;
+  view?: boolean;
+  section: ModalTable;
 };
 
-export function TableRowLayout({ item, studentClass, children }: Props) {
+export function TableRowLayout({ item, studentClass, children, view = false, section }: Props) {
   const { id, name, email, phone, photo, address } = item;
   return (
     <tr className="border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-customPurpleLight transition-all duration-500">
@@ -36,16 +39,18 @@ export function TableRowLayout({ item, studentClass, children }: Props) {
       <td className="hidden md:table-cell max-w-[120px] overflow-x-auto whitespace-nowrap">{address}</td>
       <td>
         <div className="flex justify-evenly items-center gap-3">
-          <Link href={`/list/teachers/${id}`}>
-            <button className="p-2 flex items-center justify-center text-mainText rounded-md bg-customSky transition-all duration-500 hover:text-primary">
-              <View className="w-5 h-5" aria-hidden="true" />
-            </button>
-          </Link>
+          {view && (
+            <Link
+              href={`/list/teachers/${id}`}
+              className="p-2 flex items-center justify-center rounded-md bg-customSky transition-all duration-500 hover:text-primary">
+              <View className="w-5 h-5 text-inherit" aria-hidden="true" />
+            </Link>
+          )}
           {role === 'admin' && (
-            <button className="p-2 flex items-center justify-center text-mainText rounded-md bg-customPurple transition-all duration-500 hover:text-red-600">
-              <BrushCleaning className="w-5 h-5" aria-hidden="true" />
-            </button>
-            // <FormModal table="teacher" type="delete" id={item.id}/>
+            <>
+              <FormModal table={section} type="update" id={item.id} />
+              <FormModal table={section} type="delete" id={item.id} />
+            </>
           )}
         </div>
       </td>

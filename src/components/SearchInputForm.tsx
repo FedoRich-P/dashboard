@@ -11,12 +11,9 @@ export default function SearchInputForm({ className, placeholder = 'Search...' }
       className={`items-center gap-2 text-xs rounded-full ring-[1.5px] ring-mainText px-2 ${className}`}
       role="search">
       <Search className="w-4 h-4 text-gray-500" aria-hidden="true" />
-      <label htmlFor="navbar-search" className="sr-only">
-        Search
-      </label>
       <input
         id="navbar-search"
-        type="text"
+        type="search"
         placeholder={placeholder}
         className="w-[200px] p-2 bg-transparent outline-none text-sm"
       />
